@@ -36,7 +36,7 @@ connection.query('SELECT * FROM products', function(err, res) {
             fn();
         } else {
             console.log("");
-            console.log("Thank you! Have a good day.");
+            console.log("Thank you! Have a good day!");
             console.log("");
             connection.end();
         }
@@ -124,7 +124,7 @@ var confirm = function(QTY, productQTY, id){
                 });
         } else {
           console.log("");
-          console.log("Alright! Have a good day.");
+          console.log("Alright! Have a good day!");
           console.log("");
           connection.end();
         };

@@ -1,10 +1,11 @@
 # Bamazon
 
 ### Purpose
-To create an shopping, data management application
+Pricticing how to applying 2 technologies to create shopping and database management applications.
 
 ### Technology
 * NodeJS
+* MySQL
 
 ### How to use an app
 
@@ -20,7 +21,7 @@ To create an shopping, data management application
 1. Then you will be shown the total price and prompted confirming
     ![Create flashcard prompt](/images/BC3.png)
 
-1. if you `enter` of type `Y` and enter you will successfully make a purchase
+1. If you `enter` or type `Y` and enter you will successfully make a purchase
     ![Create flashcard prompt](/images/BC4.png)
 
     * Otherwise if you type `N` and enter you will be quit of the application.
