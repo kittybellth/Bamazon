@@ -21,7 +21,7 @@ Pricticing how to applying 2 technologies to create shopping and database manage
 1. Then you will be shown the total price and prompted confirming
     ![Create flashcard prompt](/images/BC3.png)
 
-1. If you `enter` or type `Y` and enter you will successfully make a purchase
+1. If you `enter` or type `Y` and enter, you will successfully make a purchase
     ![Create flashcard prompt](/images/BC4.png)
 
     * Otherwise if you type `N` and enter you will be quit of the application.
