@@ -3,7 +3,7 @@
 ### Purpose
 Pricticing how to applying 2 technologies to create shopping and database management applications.
 
-### Technology
+### Technologies
 * NodeJS
 * MySQL
 
