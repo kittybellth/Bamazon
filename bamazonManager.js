@@ -116,26 +116,36 @@ var addInventory = function(){
         var qty = parseInt(ans.qty);
         connection.query('SELECT * FROM products', function(err, res) {
             for(var i = 0; i < res.length; i++){
-                if(res[i].item_id == id){
-                    var newProductQTY = parseInt(res[i].stock_quantity);
-                    newProductQTY += qty;
-                    connection.query("UPDATE products SET ? WHERE ?", [{
-                        stock_quantity: newProductQTY
-                    },{
-                        item_id: id
-                    }], function(err, res) {
-                    if (err) throw err;
+                if (res[i].stock_quantity <= 5){
+                    if(res[i].item_id == id){
+                        var newProductQTY = parseInt(res[i].stock_quantity);
+                        newProductQTY += qty;
+                        console.log(newProductQTY);
+                        console.log(id);
+                        connection.query("UPDATE products SET ? WHERE ?", [{
+                            stock_quantity: newProductQTY
+                        },{
+                            item_id: id
+                        }], function(err, res) {
+                        if (err) throw err;
+                            console.log("");
+                            console.log("Saved!");
+                            console.log("");
+                                setTimeout(function(){
+                                    allProduct();
+                                }, 2000);
+                        });
+                    } else if (res[i].item_id !== id){
                         console.log("");
-                        console.log("Saved!");
+                        console.log("Invalid ID!");
                         console.log("");
-                            setTimeout(function(){
-                                allProduct();
-                            }, 2000);
-                    });
+                        connection.end();
+                        return;
+                    };
                 };
             };
         });
-    })
+    });
 };
 
 var addNewProduct = function(){
