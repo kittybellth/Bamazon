@@ -19,7 +19,9 @@ var table = new Table({
 connection.connect (function(err) {
     if (err) throw err;
     console.log("connection as id "+connection.threadId);
+    displayTable(initApp);
 });
+
 var displayTable = function(fn){
 connection.query('SELECT * FROM products', function(err, res) {
     if (err) throw err;
@@ -131,4 +133,4 @@ var confirm = function(QTY, productQTY, id){
     });
 };
 
-displayTable(initApp);
+
