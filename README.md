@@ -8,7 +8,7 @@ Pricticing how to applying 2 technologies to create shopping and database manage
 * MySQL
 
 ### How to use an application
-
+**First thing first install all npm from package.json for running this application properly**
 
 #### Customer Application
 1. Open the Terminal or Bash and use command `node bamazonCustomer.js`.
@@ -27,7 +27,9 @@ Pricticing how to applying 2 technologies to create shopping and database manage
     * Otherwise if you type `N` and enter you will be quit of the application.
 
 
+
 #### Manager Application
+
 1. Open the Terminal or Bash and use command `node bamazonManager.js`.
 1. Once you are connected to the mySQ you will be promptd asking
     ![Initial Prompt](/images/BM1.png)
