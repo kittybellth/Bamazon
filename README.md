@@ -1,14 +1,14 @@
 # Bamazon
 
 ### Purpose
-Practicing how to apply 2 technologies to create shopping and database management applications.
+Learning how to apply 2 technologies to create shopping and database management applications.
 
 ### Technologies
 * NodeJS
 * MySQL
 
 ### How to use an application
-* **First thing first install all npm from package.json for running this application properly**
+* **First thing first install all npm from package.json to run this application properly**
 
 #### Customer Application
 1. Open the Terminal or Bash and use command `node bamazonCustomer.js`.
